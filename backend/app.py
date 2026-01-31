@@ -1,7 +1,9 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import pandas as pd
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def home():
@@ -14,9 +16,9 @@ def summary():
     progress = pd.read_csv("data/progress.csv")
 
     data = {
-        "projects": len(projects),
-        "beneficiaries": len(beneficiaries),
-        "water_conserved": int(progress["water_conserved_lakh_liters"].sum())
+        "total_projects": len(projects),
+        "total_beneficiaries": len(beneficiaries),
+        "total_water_conserved": round(progress["water_conserved_lakh_liters"].sum(), 1)
     }
 
     return jsonify(data)
