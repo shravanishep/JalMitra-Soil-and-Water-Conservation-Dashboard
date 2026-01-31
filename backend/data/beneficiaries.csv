@@ -1,0 +1,11 @@
+beneficiary_id,beneficiary_name,gender,district,village,linked_project_id
+B001,Ramesh Patil,Male,Nashik,Pimpalgaon,P001
+B002,Sunita Deshmukh,Female,Pune,Wagholi,P002
+B003,Vijay Kumar,Male,Ratnagiri,Devrukh,P003
+B004,Anita Jadhav,Female,Ahmednagar,Rahuri,P004
+B005,Prakash Shinde,Male,Satara,Panchgani,P005
+B006,Meena Kulkarni,Female,Aurangabad,Gangapur,P006
+B007,Suresh Bhosale,Male,Nagpur,Kamptee,P007
+B008,Kavita More,Female,Solapur,Pandharpur,P008
+B009,Rajesh Pawar,Male,Thane,Kalyan,P009
+B010,Lata Rane,Female,Kolhapur,Ichalkaranji,P010

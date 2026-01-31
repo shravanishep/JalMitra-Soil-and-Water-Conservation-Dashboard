@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -8,13 +9,17 @@ def home():
 
 @app.route("/summary")
 def summary():
+    projects = pd.read_csv("data/projects.csv")
+    beneficiaries = pd.read_csv("data/beneficiaries.csv")
+    progress = pd.read_csv("data/progress.csv")
+
     data = {
-        "beneficiaries": 10600,
-        "water_conserved": 600,
-        "projects": 120
+        "projects": len(projects),
+        "beneficiaries": len(beneficiaries),
+        "water_conserved": int(progress["water_conserved_lakh_liters"].sum())
     }
+
     return jsonify(data)
 
 if __name__ == "__main__":
     app.run(debug=True)
-

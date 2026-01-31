@@ -1,0 +1,11 @@
+project_id,project_name,district,village,activity_type,start_year,status
+P001,Yamuna Check Dam Project,Nashik,Pimpalgaon,Check Dam,2020,Completed
+P002,Sahyadri Farm Pond Initiative,Pune,Wagholi,Farm Pond,2021,Completed
+P003,Konkan Watershed Program,Ratnagiri,Devrukh,Watershed Development,2019,Completed
+P004,Marathwada Rainwater Harvest,Ahmednagar,Rahuri,Rainwater Harvesting,2022,Active
+P005,Western Ghats Tree Plantation,Satara,Panchgani,Tree Plantation,2021,Active
+P006,Godavari Basin Check Dam,Aurangabad,Gangapur,Check Dam,2023,Active
+P007,Vidarbha Farm Pond Scheme,Nagpur,Kamptee,Farm Pond,2022,Active
+P008,Deccan Watershed Revival,Solapur,Pandharpur,Watershed Development,2020,Completed
+P009,Urban Rainwater Project,Thane,Kalyan,Rainwater Harvesting,2023,Active
+P010,Green Cover Expansion,Kolhapur,Ichalkaranji,Tree Plantation,2021,Completed
