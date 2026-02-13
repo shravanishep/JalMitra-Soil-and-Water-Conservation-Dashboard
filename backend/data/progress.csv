@@ -9,3 +9,163 @@ PR007,P007,2022,31.5,10.8,Farm ponds helping during dry season
 PR008,P008,2020,55.9,28.3,Soil erosion reduced by 40 percent
 PR009,P009,2023,42.1,6.9,Community tanks and recharge pits built
 PR010,P010,2021,22.7,42.1,Green cover increased significantly
+PR011,P001,2020,16.3,6.7,structure maintenance completed before rains
+PR012,P001,2021,16.6,7.8,monsoon recharge improved near habitations
+PR013,P001,2022,21.5,11.2,monsoon recharge improved near habitations
+PR014,P001,2023,25.6,10.1,monsoon recharge improved near habitations
+PR015,P001,2024,28.5,12.8,monsoon recharge improved near habitations
+PR016,P002,2021,14.5,7.4,water availability sustained through lean months
+PR017,P002,2022,17.0,6.9,field bund alignment reduced runoff losses
+PR018,P002,2023,19.4,9.7,beneficiary groups reported improved irrigation access
+PR019,P002,2024,25.2,10.3,structure maintenance completed before rains
+PR020,P003,2019,10.4,8.3,beneficiary groups reported improved irrigation access
+PR021,P003,2020,12.8,9.1,monsoon recharge improved near habitations
+PR022,P003,2021,14.6,10.9,structure maintenance completed before rains
+PR023,P003,2022,19.2,13.5,field bund alignment reduced runoff losses
+PR024,P003,2023,20.1,15.8,monsoon recharge improved near habitations
+PR025,P003,2024,25.8,17.2,field bund alignment reduced runoff losses
+PR026,P004,2022,17.7,6.5,community labour participation remained strong
+PR027,P004,2023,20.3,6.5,community labour participation remained strong
+PR028,P004,2024,24.1,10.0,beneficiary groups reported improved irrigation access
+PR029,P005,2021,9.7,11.4,structure maintenance completed before rains
+PR030,P005,2022,12.5,15.2,community labour participation remained strong
+PR031,P005,2023,14.9,15.3,structure maintenance completed before rains
+PR032,P005,2024,19.0,18.5,monsoon recharge improved near habitations
+PR033,P006,2023,25.6,10.5,water availability sustained through lean months
+PR034,P006,2024,28.6,12.6,structure maintenance completed before rains
+PR035,P007,2022,18.8,8.1,field bund alignment reduced runoff losses
+PR036,P007,2023,19.1,8.2,beneficiary groups reported improved irrigation access
+PR037,P007,2024,25.1,8.9,monsoon recharge improved near habitations
+PR038,P008,2020,14.8,9.9,monsoon recharge improved near habitations
+PR039,P008,2021,14.0,12.5,water availability sustained through lean months
+PR040,P008,2022,17.2,13.3,silt removal increased storage efficiency
+PR041,P008,2023,23.3,15.0,community labour participation remained strong
+PR042,P008,2024,24.6,15.6,field bund alignment reduced runoff losses
+PR043,P009,2023,19.6,8.4,silt removal increased storage efficiency
+PR044,P009,2024,24.6,8.4,community labour participation remained strong
+PR045,P010,2021,12.9,11.5,silt removal increased storage efficiency
+PR046,P010,2022,11.0,13.0,monsoon recharge improved near habitations
+PR047,P010,2023,13.9,15.2,water availability sustained through lean months
+PR048,P010,2024,17.8,16.8,silt removal increased storage efficiency
+PR049,P011,2018,11.4,6.3,structure maintenance completed before rains
+PR050,P011,2019,15.1,8.1,monsoon recharge improved near habitations
+PR051,P011,2020,16.4,6.9,field bund alignment reduced runoff losses
+PR052,P011,2021,18.7,9.6,structure maintenance completed before rains
+PR053,P011,2022,19.2,9.9,silt removal increased storage efficiency
+PR054,P011,2023,23.1,12.0,water availability sustained through lean months
+PR055,P011,2024,28.7,12.7,community labour participation remained strong
+PR056,P012,2018,9.0,3.8,water availability sustained through lean months
+PR057,P012,2019,9.7,5.8,field bund alignment reduced runoff losses
+PR058,P012,2020,11.4,5.8,community labour participation remained strong
+PR059,P012,2021,14.4,7.5,field bund alignment reduced runoff losses
+PR060,P012,2022,18.5,8.0,silt removal increased storage efficiency
+PR061,P012,2023,18.3,9.9,beneficiary groups reported improved irrigation access
+PR062,P012,2024,25.2,9.0,community labour participation remained strong
+PR063,P013,2019,10.5,10.1,monsoon recharge improved near habitations
+PR064,P013,2020,11.6,10.8,beneficiary groups reported improved irrigation access
+PR065,P013,2021,12.1,9.9,water availability sustained through lean months
+PR066,P013,2022,14.0,12.6,structure maintenance completed before rains
+PR067,P013,2023,17.1,14.4,community labour participation remained strong
+PR068,P013,2024,21.9,16.5,water availability sustained through lean months
+PR069,P014,2019,11.9,6.6,water availability sustained through lean months
+PR070,P014,2020,16.3,7.8,field bund alignment reduced runoff losses
+PR071,P014,2021,17.4,8.1,monsoon recharge improved near habitations
+PR072,P014,2022,20.1,10.3,community labour participation remained strong
+PR073,P014,2023,25.6,10.0,water availability sustained through lean months
+PR074,P014,2024,30.3,12.0,monsoon recharge improved near habitations
+PR075,P015,2020,14.2,4.9,community labour participation remained strong
+PR076,P015,2021,13.3,6.7,field bund alignment reduced runoff losses
+PR077,P015,2022,15.2,8.9,field bund alignment reduced runoff losses
+PR078,P015,2023,20.6,8.0,silt removal increased storage efficiency
+PR079,P015,2024,25.2,8.8,monsoon recharge improved near habitations
+PR080,P016,2020,11.3,9.5,silt removal increased storage efficiency
+PR081,P016,2021,11.8,11.6,water availability sustained through lean months
+PR082,P016,2022,14.7,12.9,monsoon recharge improved near habitations
+PR083,P016,2023,16.6,13.7,beneficiary groups reported improved irrigation access
+PR084,P016,2024,18.4,14.9,field bund alignment reduced runoff losses
+PR085,P017,2021,17.4,8.6,structure maintenance completed before rains
+PR086,P017,2022,20.6,11.1,monsoon recharge improved near habitations
+PR087,P017,2023,24.9,12.4,field bund alignment reduced runoff losses
+PR088,P017,2024,28.0,13.2,field bund alignment reduced runoff losses
+PR089,P018,2021,15.6,8.1,beneficiary groups reported improved irrigation access
+PR090,P018,2022,18.2,6.8,silt removal increased storage efficiency
+PR091,P018,2023,20.2,9.7,monsoon recharge improved near habitations
+PR092,P018,2024,22.5,8.3,silt removal increased storage efficiency
+PR093,P019,2022,13.1,13.3,silt removal increased storage efficiency
+PR094,P019,2023,16.1,14.7,water availability sustained through lean months
+PR095,P019,2024,22.1,15.9,water availability sustained through lean months
+PR096,P020,2022,20.7,9.2,community labour participation remained strong
+PR097,P020,2023,27.2,11.6,field bund alignment reduced runoff losses
+PR098,P020,2024,27.9,12.2,monsoon recharge improved near habitations
+PR099,P021,2022,17.1,7.7,beneficiary groups reported improved irrigation access
+PR100,P021,2023,20.4,7.5,field bund alignment reduced runoff losses
+PR101,P021,2024,22.2,8.8,field bund alignment reduced runoff losses
+PR102,P022,2022,12.3,13.5,silt removal increased storage efficiency
+PR103,P022,2023,15.4,15.2,community labour participation remained strong
+PR104,P022,2024,20.4,14.5,monsoon recharge improved near habitations
+PR105,P023,2023,24.8,11.6,field bund alignment reduced runoff losses
+PR106,P023,2024,28.9,12.1,water availability sustained through lean months
+PR107,P024,2023,21.2,8.0,silt removal increased storage efficiency
+PR108,P024,2024,22.4,10.1,silt removal increased storage efficiency
+PR109,P025,2023,16.3,14.8,monsoon recharge improved near habitations
+PR110,P025,2024,18.0,16.1,field bund alignment reduced runoff losses
+PR111,P026,2023,27.3,10.2,community labour participation remained strong
+PR112,P026,2024,29.7,11.7,structure maintenance completed before rains
+PR113,P027,2023,21.9,9.8,structure maintenance completed before rains
+PR114,P027,2024,23.0,9.5,field bund alignment reduced runoff losses
+PR115,P028,2024,20.9,16.1,beneficiary groups reported improved irrigation access
+PR116,P029,2024,30.3,11.4,beneficiary groups reported improved irrigation access
+PR117,P030,2024,24.1,10.9,monsoon recharge improved near habitations
+PR118,P031,2024,21.9,14.8,monsoon recharge improved near habitations
+PR119,P032,2024,31.3,13.4,community labour participation remained strong
+PR120,P033,2024,23.0,10.0,water availability sustained through lean months
+PR121,P034,2024,19.4,16.3,beneficiary groups reported improved irrigation access
+PR122,P017,2024,28.6,14.0,monsoon recharge improved near habitations
+PR123,P006,2024,31.4,11.3,structure maintenance completed before rains
+PR124,P009,2024,21.4,8.5,water availability sustained through lean months
+PR125,P028,2024,18.3,17.2,water availability sustained through lean months
+PR126,P010,2021,12.5,12.7,community labour participation remained strong
+PR127,P028,2024,18.0,15.3,beneficiary groups reported improved irrigation access
+PR128,P003,2021,13.9,10.5,monsoon recharge improved near habitations
+PR129,P023,2024,32.1,13.5,community labour participation remained strong
+PR130,P011,2024,31.3,14.0,monsoon recharge improved near habitations
+PR131,P012,2023,22.4,9.6,silt removal increased storage efficiency
+PR132,P016,2022,12.5,13.1,silt removal increased storage efficiency
+PR133,P003,2022,16.7,13.9,silt removal increased storage efficiency
+PR134,P023,2024,31.3,13.9,community labour participation remained strong
+PR135,P002,2022,16.4,7.0,monsoon recharge improved near habitations
+PR136,P018,2023,21.1,8.4,beneficiary groups reported improved irrigation access
+PR137,P022,2022,12.3,14.0,community labour participation remained strong
+PR138,P017,2021,15.8,8.6,water availability sustained through lean months
+PR139,P021,2023,20.9,8.7,silt removal increased storage efficiency
+PR140,P013,2021,9.9,10.7,field bund alignment reduced runoff losses
+PR141,P013,2021,11.7,12.4,structure maintenance completed before rains
+PR142,P021,2024,25.7,10.4,structure maintenance completed before rains
+PR143,P033,2024,24.8,9.1,water availability sustained through lean months
+PR144,P019,2024,18.4,15.5,silt removal increased storage efficiency
+PR145,P012,2022,17.2,7.4,beneficiary groups reported improved irrigation access
+PR146,P001,2022,19.9,9.9,field bund alignment reduced runoff losses
+PR147,P021,2023,20.1,9.3,field bund alignment reduced runoff losses
+PR148,P031,2024,20.9,15.1,water availability sustained through lean months
+PR149,P022,2022,15.7,13.3,water availability sustained through lean months
+PR150,P020,2022,22.4,9.0,monsoon recharge improved near habitations
+PR151,P016,2023,17.7,15.0,silt removal increased storage efficiency
+PR152,P027,2023,21.4,8.3,silt removal increased storage efficiency
+PR153,P016,2021,12.8,9.4,beneficiary groups reported improved irrigation access
+PR154,P007,2023,19.0,9.7,water availability sustained through lean months
+PR155,P034,2024,18.0,15.0,beneficiary groups reported improved irrigation access
+PR156,P008,2023,20.1,14.5,field bund alignment reduced runoff losses
+PR157,P021,2023,20.9,9.4,field bund alignment reduced runoff losses
+PR158,P028,2024,22.1,16.6,silt removal increased storage efficiency
+PR159,P029,2024,31.0,13.8,structure maintenance completed before rains
+PR160,P034,2024,20.8,15.1,monsoon recharge improved near habitations
+PR161,P019,2022,13.1,11.9,field bund alignment reduced runoff losses
+PR162,P006,2023,23.6,11.0,community labour participation remained strong
+PR163,P014,2019,12.8,6.6,silt removal increased storage efficiency
+PR164,P027,2023,19.0,8.4,beneficiary groups reported improved irrigation access
+PR165,P002,2024,23.9,11.1,structure maintenance completed before rains
+PR166,P025,2024,20.3,16.5,beneficiary groups reported improved irrigation access
+PR167,P015,2023,19.0,8.5,monsoon recharge improved near habitations
+PR168,P025,2024,21.0,16.7,water availability sustained through lean months
+PR169,P011,2024,29.6,11.5,field bund alignment reduced runoff losses
+PR170,P002,2024,24.5,10.2,monsoon recharge improved near habitations

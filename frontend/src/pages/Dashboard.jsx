@@ -1,21 +1,56 @@
 import { useState, useEffect } from 'react'
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from 'recharts'
 
 function Dashboard() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [summaryError, setSummaryError] = useState(null)
+  const [yearlyWaterData, setYearlyWaterData] = useState([])
+  const [yearlyLoading, setYearlyLoading] = useState(true)
+  const [yearlyError, setYearlyError] = useState(null)
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/v1/summary')
-      .then(response => response.json())
+    const fetchJson = async (url) => {
+      const response = await fetch(url)
+      if (!response.ok) {
+        throw new Error(`Request failed: ${response.status}`)
+      }
+      return response.json()
+    }
+
+    fetch(`${apiBaseUrl}/summary`)
       .then(result => {
         setData(result)
-        setLoading(false)
       })
       .catch(error => {
-        console.error('Error fetching data:', error)
+        console.error('Error fetching summary data:', error)
+        setSummaryError('Failed to load summary data.')
+      })
+      .finally(() => {
         setLoading(false)
       })
-  }, [])
+
+    fetchJson(`${apiBaseUrl}/yearly-water`)
+      .then(result => {
+        setYearlyWaterData(result)
+      })
+      .catch(error => {
+        console.error('Error fetching yearly water data:', error)
+        setYearlyError('Failed to load yearly water data.')
+      })
+      .finally(() => {
+        setYearlyLoading(false)
+      })
+  }, [apiBaseUrl])
 
   if (loading) {
     return (
@@ -32,6 +67,12 @@ function Dashboard() {
           <h1 className="text-4xl font-bold text-gray-800 mb-2">JalMitra Dashboard</h1>
           <p className="text-gray-600">Soil & Water Conservation Monitoring</p>
         </header>
+
+        {summaryError && (
+          <div className="mb-6 rounded-lg border border-red-200 bg-red-50 p-4 text-red-700">
+            {summaryError}
+          </div>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-blue-500 hover:shadow-xl transition-shadow">
@@ -77,6 +118,46 @@ function Dashboard() {
             </div>
           </div>
         </div>
+
+        <section className="mt-10 rounded-lg bg-white p-6 shadow-lg">
+          <h2 className="mb-4 text-xl font-semibold text-gray-800">Year-wise Water Conserved</h2>
+
+          {yearlyLoading && <p className="text-gray-600">Loading chart data...</p>}
+
+          {yearlyError && !yearlyLoading && (
+            <p className="text-red-700">{yearlyError}</p>
+          )}
+
+          {!yearlyLoading && !yearlyError && (
+            <div className="h-80 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={yearlyWaterData} margin={{ top: 10, right: 20, left: 20, bottom: 30 }}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis
+                    dataKey="year"
+                    allowDecimals={false}
+                    label={{ value: 'Year', position: 'insideBottom', offset: -15 }}
+                  />
+                  <YAxis
+                    label={{
+                      value: 'Water Conserved (Lakh Liters)',
+                      angle: -90,
+                      position: 'insideLeft',
+                    }}
+                  />
+                  <Tooltip />
+                  <Line
+                    type="monotone"
+                    dataKey="water_conserved_lakh_liters"
+                    stroke="#0284c7"
+                    strokeWidth={2}
+                    dot
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          )}
+        </section>
       </div>
     </div>
   )

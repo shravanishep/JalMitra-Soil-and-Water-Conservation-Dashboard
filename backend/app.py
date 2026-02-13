@@ -40,5 +40,39 @@ def summary():
 
     return jsonify(data)
 
+
+@app.route("/api/v1/yearly-water")
+def yearly_water():
+    progress = load_csv("progress.csv")
+
+    if progress.empty:
+        return jsonify([])
+
+    typed = progress.copy()
+    typed["year"] = pd.to_numeric(typed["year"], errors="coerce")
+    typed["water_conserved_lakh_liters"] = pd.to_numeric(
+        typed["water_conserved_lakh_liters"], errors="coerce"
+    )
+
+    typed = typed.dropna(subset=["year", "water_conserved_lakh_liters"])
+    if typed.empty:
+        return jsonify([])
+
+    grouped = (
+        typed.groupby("year", as_index=False)["water_conserved_lakh_liters"]
+        .sum()
+        .sort_values("year", ascending=True)
+    )
+
+    result = [
+        {
+            "year": int(row["year"]),
+            "water_conserved_lakh_liters": round(float(row["water_conserved_lakh_liters"]), 1),
+        }
+        for _, row in grouped.iterrows()
+    ]
+
+    return jsonify(result)
+
 if __name__ == "__main__":
     app.run(debug=True)
