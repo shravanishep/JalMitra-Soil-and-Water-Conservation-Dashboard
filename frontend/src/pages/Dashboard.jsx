@@ -5,7 +5,7 @@ function Dashboard() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/summary')
+    fetch('http://127.0.0.1:5000/api/v1/summary')
       .then(response => response.json())
       .then(result => {
         setData(result)
