@@ -9,6 +9,9 @@ import {
   ResponsiveContainer,
 } from 'recharts'
 
+const DEFAULT_API_BASE_URL = "http://127.0.0.1:5000/api/v1";
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || DEFAULT_API_BASE_URL;
+
 function Dashboard() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -16,41 +19,52 @@ function Dashboard() {
   const [yearlyWaterData, setYearlyWaterData] = useState([])
   const [yearlyLoading, setYearlyLoading] = useState(true)
   const [yearlyError, setYearlyError] = useState(null)
-  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL
 
   useEffect(() => {
+    console.log("Using API base URL:", apiBaseUrl);
+
     const fetchJson = async (url) => {
-      const response = await fetch(url)
-      if (!response.ok) {
-        throw new Error(`Request failed: ${response.status}`)
+      try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`API call ${url} failed with status ${response.status}`);
+        }
+        return response.json();
+      } catch (error) {
+        console.error("Fetch failed:", error);
+        throw error;
       }
-      return response.json()
-    }
+    };
 
-    fetch(`${apiBaseUrl}/summary`)
-      .then(result => {
-        setData(result)
-      })
-      .catch(error => {
-        console.error('Error fetching summary data:', error)
-        setSummaryError('Failed to load summary data.')
-      })
-      .finally(() => {
-        setLoading(false)
-      })
+    const loadSummary = async () => {
+      const url = `${apiBaseUrl}/summary`;
+      try {
+        const result = await fetchJson(url);
+        setData(result);
+        setSummaryError(null);
+      } catch (error) {
+        setSummaryError(`Failed to load summary from ${url}`);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    fetchJson(`${apiBaseUrl}/yearly-water`)
-      .then(result => {
-        setYearlyWaterData(result)
-      })
-      .catch(error => {
-        console.error('Error fetching yearly water data:', error)
-        setYearlyError('Failed to load yearly water data.')
-      })
-      .finally(() => {
-        setYearlyLoading(false)
-      })
-  }, [apiBaseUrl])
+    const loadYearlyWater = async () => {
+      const url = `${apiBaseUrl}/yearly-water`;
+      try {
+        const result = await fetchJson(url);
+        setYearlyWaterData(result);
+        setYearlyError(null);
+      } catch (error) {
+        setYearlyError(`Failed to load yearly water from ${url}`);
+      } finally {
+        setYearlyLoading(false);
+      }
+    };
+
+    loadSummary();
+    loadYearlyWater();
+  }, [])
 
   if (loading) {
     return (
