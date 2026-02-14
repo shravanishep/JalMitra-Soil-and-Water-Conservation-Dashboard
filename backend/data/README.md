@@ -5,6 +5,9 @@ The backend currently reads:
 - `projects.csv`
 - `beneficiaries.csv`
 - `progress.csv`
+- `villages.csv`
+- `soil_metrics.csv`
+- `beneficiary_enrollments.csv`
 
 The schema below is the source of truth for column names and types.
 Keep column names stable to avoid breaking API behavior.
@@ -75,6 +78,45 @@ Optional columns (future-safe, not required by current backend):
 - Year-wise analytics: filter/group by `progress.year`.
 - Village-wise analytics: group by `projects.village` and `beneficiaries.village`.
 - Project-wise analytics: join `progress.project_id` to `projects.project_id`.
+
+## villages.csv
+
+Purpose: Canonical village master used for district-village level reporting.
+
+Required columns:
+- `village_id` (string): unique village key, e.g. `V001`
+- `district` (string): district name
+- `village` (string): village name
+- `block` (string): administrative block name
+- `taluka` (string): taluka name
+
+## soil_metrics.csv
+
+Purpose: Soil conservation outcomes tracked from field registers.
+
+Required columns:
+- `soil_record_id` (string): unique soil measurement row key
+- `project_id` (string): foreign key to `projects.project_id`
+- `year` (int): reporting year
+- `land_treated_hectares` (float): treated land area
+- `soil_saved_tons` (float): estimated soil retained/erosion prevented
+- `erosion_reduction_percent` (float): erosion reduction estimate
+- `soil_moisture_percent` (float): soil moisture index
+- `remarks` (string): field note
+
+## beneficiary_enrollments.csv
+
+Purpose: Year-wise beneficiary additions from register-level entries.
+
+Required columns:
+- `enrollment_id` (string): unique enrollment row key
+- `year` (int): enrollment/reporting year
+- `district` (string): district name
+- `village` (string): village name
+- `project_id` (string): foreign key to `projects.project_id`
+- `households_enrolled` (int): number of new households added
+- `people_enrolled` (int): number of people covered
+- `source` (string): register/source type
 
 ## Compatibility note
 
