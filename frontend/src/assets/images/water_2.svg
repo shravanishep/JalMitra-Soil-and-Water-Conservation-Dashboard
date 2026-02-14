@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'>
+  <defs>
+    <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#075985'/>
+      <stop offset='100%' stop-color='#06b6d4'/>
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='800' fill='url(#g)'/>
+  <circle cx='210' cy='120' r='120' fill='rgba(255,255,255,0.15)'/>
+  <circle cx='1030' cy='690' r='180' fill='rgba(255,255,255,0.12)'/>
+  <rect x='120' y='250' width='960' height='280' rx='24' fill='rgba(255,255,255,0.14)'/>
+  <text x='160' y='360' fill='white' font-size='68' font-family='Segoe UI, Arial, sans-serif' font-weight='700'>Water Security</text>
+  <text x='160' y='430' fill='white' font-size='36' font-family='Segoe UI, Arial, sans-serif'>Recharge structures</text>
+</svg>
